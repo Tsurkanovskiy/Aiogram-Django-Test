@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+11111111 tesst
+
+<script type="text/javascript">
+async function postData() {
+  const response = await fetch('...', {
+    method: 'POST',
+    headers: {
+      'Api-key': '...'
+    }
+  });
+  return await response;
+}
+
+const data = postData()
+console.log(Promise.resolve(data));
+	
+</script>
+</body>
+</html>
